@@ -121,7 +121,7 @@ header {
 }
 .nav a {
   width: 30%;
-  max-width: 12.3rem;
+  max-width: 9rem;
   padding: 0.5em;
 }
 
@@ -216,7 +216,7 @@ footer small {
   }
 
   section {
-    padding: 6.6rem 0 4.2rem 0;
+    padding: 10rem 0 4.2rem 0;
   }
 
   .flow-content-xl > * + * {
