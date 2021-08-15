@@ -11,10 +11,11 @@ header {
   align-items: center;
   img {
     width: 35%;
-    max-width: 10rem;
+    max-width: 12.7rem;
   }
   a {
     width: 30%;
+    max-width: 12.3rem;
     padding: 0.5em;
   }
 }
@@ -55,6 +56,9 @@ header {
 //footer section
 
 footer {
+  .row {
+    flex-direction: column;
+  }
   background-color: $very-dark-cyan;
   color: $very-pale-cyan;
   text-align: initial;

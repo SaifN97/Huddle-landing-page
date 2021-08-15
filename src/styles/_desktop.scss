@@ -1,0 +1,169 @@
+@use 'colors' as *;
+
+@media (min-width: 900px) {
+  //general
+  body {
+    text-align: initial;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.15rem;
+  }
+  section {
+    padding: 6.6rem 0 4.2rem 0;
+  }
+
+  //utility
+  .flow-content-xl > * + * {
+    margin-top: 2.5rem;
+  }
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 6.5rem;
+  }
+  .btn {
+    font-size: 0.85rem;
+    padding: 1.4em;
+  }
+
+  //nav
+  .nav {
+    width: 89%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 2.7em;
+    a {
+      padding: 1em;
+    }
+  }
+
+  //hero
+  header {
+    background: url("../images/bg-hero-desktop.svg") center center/cover,
+      $very-pale-cyan;
+  }
+  .hero {
+    padding: 4.2rem 0;
+    .container {
+      padding: 0 5rem;
+    }
+  }
+  .hero-text {
+    width: 41%;
+    align-self: center;
+    margin-top: 1rem;
+    p {
+      margin-top: 1.8rem;
+    }
+    a {
+      margin-top: 2.5em;
+      width: 54%;
+    }
+  }
+  .hero-img {
+    width: 54.5%;
+    margin-top: 0;
+  }
+
+  //info section
+  .info {
+    .card:nth-of-type(1) {
+      padding: 3em 1.5em;
+    }
+    .card:nth-of-type(2) {
+      padding: 4em 1.5em;
+    }
+    .card:nth-of-type(3) {
+      padding: 3.5em 1.5em;
+    }
+
+    .card .flow-content {
+      margin-top: 0;
+    }
+
+    .col-text {
+      width: 42%;
+      align-self: center;
+      margin-left: 5.7rem;
+    }
+    .col-img {
+      width: 35%;
+    }
+
+    .row-reverse {
+      .col-img {
+        margin-left: 5.7rem;
+      }
+      .col-text {
+        margin-left: 0;
+        width: 44%;
+      }
+    }
+    .cta {
+      text-align: center;
+      width: 65%;
+      margin: 0 auto;
+      padding: 3em 0.8em;
+      h2 {
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 1.2rem;
+        width: 52%;
+      }
+    }
+  }
+
+  //footer section
+  footer {
+    padding: 10.8em 6.5em 3.5em;
+    .logo {
+      width: 15rem;
+    }
+    .row {
+      flex-direction: row;
+    }
+
+    .contact {
+      width: 38%;
+      padding-right: 4rem;
+      p {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+      &.flow-content > * + * {
+        margin-top: 2rem;
+      }
+    }
+    .footer-nav {
+      display: flex;
+      justify-content: space-around;
+      width: 36%;
+      margin: 0;
+      a {
+        font-size: 1.1rem;
+      }
+    }
+    .social {
+      width: 26%;
+      margin: 0;
+    }
+    small {
+      font-size: 0.75rem;
+      text-align: right;
+      transform: translateX(2rem);
+    }
+  }
+}
